@@ -22,8 +22,8 @@
         VK.api ('users.get', {}, function(data){
           
           alert(data.response[0].first_name);
-          gameInstance.SendMessage('APIVK', 'TestMethod', data.response[0].first_name);
-          setTimeout(function () { 'APIVK', 'TestMethod', data.response[0].first_name); }, 3000);
+          gameInstance.SendMessage('APIVK', 'TestMethod', 'data.response[0].first_name');
+          
           
         });
       }, function() { 
