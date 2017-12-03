@@ -10,6 +10,8 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/testWebGLBuild.json", {onProgress: UnityProgress});
+      gameInstance.SendMessage("APIVK", "TestMethod", "myName");
+      
     </script>
     
    // var myName = 'Dimitri';
