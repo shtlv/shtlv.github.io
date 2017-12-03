@@ -22,6 +22,7 @@
         VK.api ('users.get', {}, function(data){
           
           alert(data.response[0].first_name);
+          SendMessage('APIVK', 'TestMethod', data.response[0].first_name);
           
           
         });
