@@ -12,7 +12,7 @@
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/testWebGLBuild.json", {onProgress: UnityProgress});
     </script>
     
-    var myName = 'Dimitri';
+   // var myName = 'Dimitri';
     
     <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
     
@@ -22,8 +22,10 @@
      // Your code here 
     VK.api('users.get', {}, function(data){
       
-      myName = data.response[0].first_name;
-       gameInstance.SendMessage('APIVK', 'TestMethod', 'myName');
+     // myName = data.response[0].first_name;
+      
+      alert(gameInstance);
+       gameInstance.SendMessage("APIVK", "TestMethod", "myName");
     });
     
     
