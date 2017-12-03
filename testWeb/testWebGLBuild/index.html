@@ -11,41 +11,6 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/testWebGLBuild.json", {onProgress: UnityProgress});
     </script>
-    
-    
-    <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
-    
-        <script type="text/javascript"> 
-      VK.init(function() { 
-         // API initialization succeeded 
-         // Your code here 
-        VK.api ('users.get', {}, function(data){
-          
-          alert(data.response[0].first_name);
-          gameInstance.SendMessage('APIVK', 'TestMethod', 'data.response[0].first_name');
-          
-          
-        });
-      }, function() { 
-         // API initialization failed 
-         // Can reload page here 
-    }, '5.69'); 
-    </script>
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
   </head>
   <body>
     <div class="webgl-content">
