@@ -10,6 +10,13 @@
 <script type="text/javascript"> 
   VK.init(function() {  
 console.log('2');
+    
+    VK.api('users.get', {'user_ids' : '45263648'}, function (data){
+      alert (data.name);
+      
+    });
+    
+    
     alert("VK INITIALIZED!!!!!)))");
     alert(viewer_id);
      
