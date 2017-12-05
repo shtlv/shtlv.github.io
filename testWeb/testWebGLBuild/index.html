@@ -2,13 +2,18 @@
 <html lang="en-us">
   <head>
 
-    
+    <script type="text/javascript"> 
+
+		var myName = "strDefault";
+
+    </script>
+
     <script type="text/javascript"> 
       
     function StartGame ()
     {
 
-	var myName = "str";
+	
 	
       gameInstance.SendMessage('APIVK', 'TestMethod', myName.toString());
       console.log('me CALLED UNITY EDITOR!!!!');
