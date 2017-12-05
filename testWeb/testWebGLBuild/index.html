@@ -8,9 +8,9 @@
     function StartGame ()
     {
 
-	var myName;
+	var myName = "str";
 	
-      gameInstance.SendMessage('APIVK', 'TestMethod', myName);
+      gameInstance.SendMessage('APIVK', 'TestMethod', myName.toString());
       console.log('me CALLED UNITY EDITOR!!!!');
     }
       
