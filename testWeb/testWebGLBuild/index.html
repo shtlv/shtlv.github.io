@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    
+    function StartGame ()
+    {
+      console.log('startGAME');
+    }
+    
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | apiVKWebGL</title>
@@ -14,7 +20,7 @@
       
     </script>
     
-   // var myName = 'Dimitri';
+   
     
     <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
     
@@ -26,14 +32,13 @@
       
      // myName = data.response[0].first_name;
       
-      console.log(gameInstance);
-      while (true){
-      gameInstance.SendMessage("APIVK", "TestMethod", "myName");
-      }
+      StartGame();
+     
+   
     });
     
     
-    gameInstance.SendMessage('APIVK', 'TestMethod', 'myName');
+  
   }, function() { 
      // API initialization failed 
      // Can reload page here 
@@ -52,7 +57,7 @@
     
     
     
-       gameInstance.SendMessage("APIVK", "TestMethod", "myName");
+      // gameInstance.SendMessage("APIVK", "TestMethod", "myName");
     
     
   </head>
