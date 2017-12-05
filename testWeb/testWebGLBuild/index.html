@@ -7,7 +7,8 @@
       
     function StartGame ()
     {
-      alert('me CALLED UNITY EDITOR!!!!');
+      gameInstance.SendMessage('APIVK', 'TestMethod', 'myName');
+      console.log('me CALLED UNITY EDITOR!!!!');
     }
       
     </script>
