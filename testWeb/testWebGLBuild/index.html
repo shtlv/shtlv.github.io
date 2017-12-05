@@ -15,7 +15,7 @@
 
 	
 	
-      gameInstance.SendMessage('APIVK', 'TestMethod', "myName");
+      gameInstance.SendMessage('APIVK', 'TestMethod', myName);
       console.log('me CALLED UNITY EDITOR!!!!');
       console.log(myName.toString());
     }
@@ -64,7 +64,7 @@
       myName = data.response[0].first_name;
       
       
-     
+     // <div id="gameContainer" style="width: 960px; height: 600px"></div>
     });
     
     
@@ -97,7 +97,7 @@
   </head>
   <body>
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div id="gameContainer" style="width: 1000px; height: 1000px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
