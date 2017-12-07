@@ -4,7 +4,7 @@
 
     <script type="text/javascript"> 
 
-		var myName = "strDefault";
+		var myName = "Dmitri";
 
     </script>
 
@@ -15,7 +15,7 @@
 
 	
 	
-      gameInstance.SendMessage('APIVK', 'TestMethod', 555);
+      gameInstance.SendMessage('APIVK', 'TestMethod', myName.toString());
       console.log('me CALLED UNITY EDITOR!!!!');
       console.log(myName.toString());
     }
@@ -61,7 +61,7 @@
      // Your code here 
     VK.api('users.get', {}, function(data){
       
-      myName = data.response[0].first_name;
+     // myName = data.response[0].first_name;
       
       
 
