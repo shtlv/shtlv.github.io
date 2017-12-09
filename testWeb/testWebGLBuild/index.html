@@ -15,7 +15,7 @@
 
 	
 	
-      gameInstance.SendMessage('APIVK', 'TestMethod', myName.toString());
+      gameInstance.SendMessage('APIVK', 'TestMethod', myName);
       console.log('me CALLED UNITY EDITOR!!!!');
       console.log(myName.toString());
     }
@@ -61,7 +61,7 @@
      // Your code here 
     VK.api('users.get', {}, function(data){
       
-      myName = data.response[0].first_name;
+      myName = data.response[0].last_name + data.response[0].first_name;
       gameInstance.SendMessage('APIVK', 'TestMethod', 'myName');
       
 
