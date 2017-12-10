@@ -3,6 +3,7 @@
   <head>
 
     <script type="text/javascript"> 
+	    	
 		var infoUser = [];
 	        var fruits = [45, "gffgh", "ljkhygghj"];
 	//	var currentUser = "tttest___";
@@ -14,7 +15,7 @@
     function SendDataToUnity ()
     {
 
-     
+     caonsole.log(infoUser);
       gameInstance.SendMessage('APIVK', 'GetUserInfoFromVK', infoUser);
       console.log('me CALLED UNITY EDITOR!!!!');
 	    
