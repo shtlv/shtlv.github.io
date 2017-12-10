@@ -3,9 +3,9 @@
   <head>
 
     <script type="text/javascript"> 
-		var infoUser = [];
-	        var fruits = [45, "gffgh", "ljkhygghj"];
-	//	var currentUser = "tttest___";
+	    	
+	    	var str;
+
 
     </script>
 
@@ -15,8 +15,8 @@
     {
 
      
-      gameInstance.SendMessage('APIVK', 'GetUserInfoFromVK', "FLSDFJLSJ YR TEST!!!!111");
-      console.log('me CALLED UNITY EDITOR!!!!');
+      gameInstance.SendMessage('APIVK', 'GetUserInfoFromVK', JSON.stringify(str));
+      //console.log('me CALLED UNITY EDITOR!!!!');
 	    
 	//    console.log(currentUser);
      
@@ -47,16 +47,8 @@
      // API initialization succeeded 
      // Your code here 
     VK.api('users.get', {}, function(data){
-      
-	   // alert(data.response[0].id);
-           // currentUser = data;
-	    infoUser[0] = data.response[0].id;
-	    infoUser[1] = data.response[0].first_name;
-	    infoUser[2] = data.response[0].last_name;
-	    
-     // gameInstance.SendMessage('APIVK', 'TestMethod', 'myName');
-      
-
+      		str = data.response[0];
+	  
     });
     
     
