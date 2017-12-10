@@ -51,6 +51,16 @@
 	  
     });
     
+	  alert (viewer_id);
+	  
+	  
+	VK.api("wall.post", {"message": "Hello!"}, function (data) {
+alert("Post ID:" + data.response.post_id);
+});  
+	  
+	  
+	  
+	  
     
     //gameInstance.SendMessage('APIVK', 'TestMethod', 'myName');
   }, function() { 
