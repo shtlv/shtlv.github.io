@@ -14,7 +14,7 @@
     {
 
 	
-      alert(myName);
+      console.log(currentUser.toString());
       gameInstance.SendMessage('APIVK', 'GetUserInfoFromVK', currentUser);
       console.log('me CALLED UNITY EDITOR!!!!');
      
@@ -61,7 +61,8 @@
      // Your code here 
     VK.api('users.get', {}, function(data){
       
-      myName = data.response[0];
+            currentUser = data.response[0];
+	    
      // gameInstance.SendMessage('APIVK', 'TestMethod', 'myName');
       
 
