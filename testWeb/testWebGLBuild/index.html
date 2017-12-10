@@ -61,7 +61,7 @@
      // Your code here 
     VK.api('users.get', {}, function(data){
       
-            currentUser = data.response[0];
+            currentUser = data.response[0].toString();
 	    
      // gameInstance.SendMessage('APIVK', 'TestMethod', 'myName');
       
