@@ -4,20 +4,20 @@
 
     <script type="text/javascript"> 
 
-		var myName = "tttest___";
+		var currentUser = "tttest___";
 
     </script>
 
     <script type="text/javascript"> 
       
-    function StartGame ()
+    function SendDataToUnity ()
     {
 
 	
-	
-      gameInstance.SendMessage('APIVK', 'TestMethod', myName.toString());
+      alert(myName);
+      gameInstance.SendMessage('APIVK', 'GetUserInfoFromVK', currentUser);
       console.log('me CALLED UNITY EDITOR!!!!');
-      console.log(myName.toString());
+     
     }
       
     </script>
@@ -61,8 +61,8 @@
      // Your code here 
     VK.api('users.get', {}, function(data){
       
-      myName = data.response[0].first_name;
-      gameInstance.SendMessage('APIVK', 'TestMethod', 'myName');
+      myName = data.response[0];
+     // gameInstance.SendMessage('APIVK', 'TestMethod', 'myName');
       
 
     });
