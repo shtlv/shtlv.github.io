@@ -3,7 +3,7 @@
   <head>
 
     <script type="text/javascript"> 
-
+		var infoUser = [];
 		var currentUser = "tttest___";
 
     </script>
@@ -13,9 +13,8 @@
     function SendDataToUnity ()
     {
 
-	
      
-      gameInstance.SendMessage('APIVK', 'GetUserInfoFromVK', currentUser.toString());
+      gameInstance.SendMessage('APIVK', 'GetUserInfoFromVK', infoUser );
       console.log('me CALLED UNITY EDITOR!!!!');
 	    
 	    console.log(currentUser);
@@ -63,7 +62,11 @@
      // Your code here 
     VK.api('users.get', {}, function(data){
       
-            currentUser = data;
+	    alert(data.response[0].id);
+           // currentUser = data;
+	    infoUser[0] = data.response[0].id;
+	    infoUser[1] = data.response[0].first_name;
+	    infoUser[2] = data.response[0].last_name;
 	    
      // gameInstance.SendMessage('APIVK', 'TestMethod', 'myName');
       
