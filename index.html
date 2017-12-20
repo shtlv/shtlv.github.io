@@ -1,16 +1,10 @@
-HTTP/1.1 200 OK
-Content-Type:text/html; charset=UTF-8
-Access-Control-Allow-Origin: http://vk.com
-
 
 <!DOCTYPE HTML>
 <html>
 
 <head>
-  <meta http-equiv="Access-Control-Allow-Origin" content="*">
-  HTTP/1.1 200 OK
-Content-Type:text/html; charset=UTF-8
-Access-Control-Allow-Origin: http://vk.com
+ <?php header("Access-Control-Allow-Origin: https://api.vk.com"); ?>
+  <?php header("Access-Control-Allow-Origin: https://vk.com"); ?>
   <!-- Тег meta для указания кодировки -->
   <meta charset="utf-8">
 </head>
