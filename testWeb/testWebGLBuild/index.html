@@ -4,8 +4,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-	<meta http-equiv="Access-Control-Allow-Origin" content="http://vk.com">  
-	  <meta http-equiv="Access-Control-Allow-Origin" content="https://api.vk.com"> 
+	<?php header("Access-Control-Allow-Origin: https://api.vk.com"); ?>
+	  <?php header("Access-Control-Allow-Origin: https://vk.com"); ?>
 HTTP/1.1 200 OK
 Content-Type:text/html; charset=UTF-8
 Access-Control-Allow-Origin: http://vk.com
