@@ -1,16 +1,3 @@
-<?php
-header('Access-Control-Allow-Origin: http://vk.com/', true);
-?>
-<?php
-header('Access-Control-Allow-Origin: https://vk.com/', true); 
-<?php
-?>
-<?php
-header('Access-Control-Allow-Origin: http://api.vk.com/', true);
-?>
-<?php
-header('Access-Control-Allow-Origin: https://api.vk.com/', true);
-?>
 
 <!DOCTYPE HTML>
 <html>
@@ -23,27 +10,7 @@ header('Access-Control-Allow-Origin: https://api.vk.com/', true);
 
 <body>
 
-   <script>
-
-var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
-
-var xhr = new XHR();
-
-
-xhr.open('GET', 'http://bologer.ru/oshibka-no-access-control-allow-origin-header-is-present-on-the-requested-resource/', true);
-
-xhr.onload = function() {
-  alert( this.responseText );
-}
-
-xhr.onerror = function() {
-  alert( 'Ошибка ' + this.status );
-}
-
-xhr.send();
-   
-   
-   </script>
+  bla bla bla....
  
  // <script>
  //   alert( 'Привет, Мир!' );
