@@ -1,50 +1,6 @@
-
-<?php
-header('Access-Control-Allow-Origin: http://vk.com/', true);
-?>
-<?php
-header('Access-Control-Allow-Origin: https://vk.com/', true); 
-<?php
-?>
-<?php
-header('Access-Control-Allow-Origin: http://api.vk.com/', true);
-?>
-<?php
-header('Access-Control-Allow-Origin: https://api.vk.com/', true);
-?>
-
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-<<<<<<< HEAD
-=======
-
-	 
-
-
-    <script type="text/javascript"> 
-	    	
-	    	var str;
-
-
-    </script>
-
-    <script type="text/javascript"> 
-      
-    function SendDataToUnity ()
-    {
-
-     
-      gameInstance.SendMessage('APIVK', 'GetUserInfoFromVK', JSON.stringify(str));
-      //console.log('me CALLED UNITY EDITOR!!!!');
-	    
-	//    console.log(currentUser);
-     
-    }
-      
-    </script>
-
->>>>>>> b0e67edcda71ca2ce78b3deb1b17323af39c7c41
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | SpaceShooter</title>
@@ -55,66 +11,6 @@ header('Access-Control-Allow-Origin: https://api.vk.com/', true);
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Desktop.json", {onProgress: UnityProgress});
     </script>
-<<<<<<< HEAD
-=======
-   </script>
-    
-	
-	
-   
-    
-    <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
-    
-    <script type="text/javascript"> 
-  VK.init(function() { 
-     // API initialization succeeded 
-     // Your code here 
-    VK.api('users.get', {}, function(data){
-      		str = data.response[0];
-	  
-    });
-    
-	 
-	VK.loadParams(document.location.href); 
-        var viewer_id = VK.params.viewer_id;
-	//  alert (viewer_id);
-	  
-	  
-	//VK.api("wall.post", {"message": "response_0"}, function (data) {
-       // alert("Post ID:" + data.response.post_id);
-});  
-	  
-	  
-	  
-	  
-    
-    //gameInstance.SendMessage('APIVK', 'TestMethod', 'myName');
-//  }, function() { 
-     // API initialization failed 
-     // Can reload page here 
-//}, '5.69'); 
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> b0e67edcda71ca2ce78b3deb1b17323af39c7c41
   </head>
   <body>
     <div class="webgl-content">
