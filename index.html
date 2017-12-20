@@ -14,7 +14,13 @@
   </script>
 
   
-  <p onclick="return location.href = 'http://www.yandex.ru/'">Я-ссылачка))</p>
+ <a href="http://url.zone/" onclick="javascript:about();">Link!1</a>"
+
+function about(e) {
+   alert( 'Привет22, Мир!' );
+    e.PreventDefault; // Сразу в начале функции
+    //...
+}
 
   
   
