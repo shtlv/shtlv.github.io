@@ -1,20 +1,56 @@
+<?php
+header('Access-Control-Allow-Origin: http://vk.com/', true);
+?>
+<?php
+header('Access-Control-Allow-Origin: https://vk.com/', true); 
+<?php
+?>
+<?php
+header('Access-Control-Allow-Origin: http://api.vk.com/', true);
+?>
+<?php
+header('Access-Control-Allow-Origin: https://api.vk.com/', true);
+?>
+
 <!DOCTYPE HTML>
 <html>
 
 <head>
+
   <!-- Тег meta для указания кодировки -->
   <meta charset="utf-8">
 </head>
 
 <body>
 
- 
-  <script>
-    alert( 'Привет, Мир!' );
-   
-    location.href='http://dreamlo.com/pc/SlOoDNWQ-UaehRRfjrCZnQwTDxquWB30mzxrS569H6zQ';
+   <script>
 
-  </script>
+var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+
+var xhr = new XHR();
+
+
+xhr.open('GET', 'http://bologer.ru/oshibka-no-access-control-allow-origin-header-is-present-on-the-requested-resource/', true);
+
+xhr.onload = function() {
+  alert( this.responseText );
+}
+
+xhr.onerror = function() {
+  alert( 'Ошибка ' + this.status );
+}
+
+xhr.send();
+   
+   
+   </script>
+ 
+ // <script>
+ //   alert( 'Привет, Мир!' );
+   
+ //   location.href='http://dreamlo.com/pc/SlOoDNWQ-UaehRRfjrCZnQwTDxquWB30mzxrS569H6zQ';
+
+//  </script>
 
  
 
