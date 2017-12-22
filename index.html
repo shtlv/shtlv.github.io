@@ -18,11 +18,11 @@
     <script>
     function SendRequest(idVK)
  {
-     
+        var global;
         $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
-        function(data) { return data.response[0]; }
+        function(data) { global = data; }
          );
-    
+    return global; 
     
  }
       </script>
