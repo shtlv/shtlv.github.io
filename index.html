@@ -9,6 +9,7 @@
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
     <script>
+      var go = -1;
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Desktop.json", {onProgress: UnityProgress});
     </script>
   
@@ -23,7 +24,7 @@
         function(data) { })
        
    global.complete(function() {
-  return global ;
+   go = 12345;
 });
        
    
@@ -37,7 +38,7 @@
     
      var a  =  SendRequest(45263648);
      alert (a + "d");
-      
+      alert (go);
       </script>
     
   </head>
