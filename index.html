@@ -11,9 +11,7 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Desktop.json", {onProgress: UnityProgress});
     </script>
-    <script>
-       var global = "defa";
-      </script>
+  
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -23,7 +21,7 @@
        global = "11555555";
         $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
         function(data) { global = data.response[0].first_name.toString();})
-   return "xOOO" ;
+   return global ;
 
     
  }
