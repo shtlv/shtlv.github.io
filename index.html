@@ -18,10 +18,10 @@
     <script>
     function SendRequest(idVK)
  {
-       global = "11555555";
-       global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
+       
+       var global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
         function(data) { })
-   return global ;
+   return global.response[0].last_name ;
 
     
  }
