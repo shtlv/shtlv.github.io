@@ -17,7 +17,7 @@
 
     <script>
 $.getJSON('https://api.vk.com/method/users.get?user_ids=210700286,45263648,1&fields=photo_200&callback=?', 
-    function(data) { console.log(data); }
+    function(data) { JSON.stringify(data.response[1]); }
 );
     </script>
     
