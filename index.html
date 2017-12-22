@@ -22,12 +22,9 @@
        var global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
         function(data) { })
        
-       .done(function(data) {
-    console.log( "second success" );
-         global = data.response[0].last_name;
-         
-         alert (global);
-  })
+   global.complete(function(data) {
+  console.log( data.response[0].photo_200 );
+});
        
    return global ;
 
