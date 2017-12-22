@@ -16,11 +16,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script>
-    function SendRequest(array)
+    function SendRequest(idVK)
  {
       alert (array);
        // $.getJSON('https://api.vk.com/method/users.get?user_ids=210700286,45263648,1&fields=photo_200&callback=?', 
-        $.getJSON('https://api.vk.com/method/users.get?user_ids=array&fields=photo_200&callback=?', 
+        $.getJSON('https://api.vk.com/method/users.get?user_ids=idVK&fields=photo_200&callback=?', 
         function(data) { console.log(data); }
          );
     
@@ -30,8 +30,8 @@
     
    
     <script>
-      var a [] = 1, 2, 45263648;
-      SendRequest(a);
+     
+      SendRequest(45263648);
       </script>
     
   </head>
