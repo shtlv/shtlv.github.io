@@ -20,10 +20,10 @@
     function SendRequest(idVK)
  {
        
-       $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
+     var global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
         function(data) { })
        
-.complete(function() {
+.done(function() {
   console.log( "second complete" );
 });
        
