@@ -20,7 +20,7 @@
  {
      
         $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
-        function(data) { console.log(data); }
+        function(data) { return data; }
          );
     
     
@@ -29,8 +29,8 @@
     
    
     <script>
-     
-      SendRequest(45263648);
+     var a;
+     a  =  SendRequest(45263648);
       </script>
     
   </head>
