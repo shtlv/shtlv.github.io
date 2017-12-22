@@ -19,8 +19,8 @@
     function SendRequest(idVK)
  {
        global = "11555555";
-        $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
-        function(data) { global = 555 ;})
+       global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
+        function(data) { })
    return global ;
 
     
