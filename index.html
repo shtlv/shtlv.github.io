@@ -17,6 +17,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script>
+      
+      function GOT (str)
+      {
+        alert("mecall_ " + str);
+      }
+      
+      
+      
     function SendRequest(idVK)
  {
        
@@ -24,6 +32,7 @@
         function(data) { go = 654; })
        
 .done(function(data) {
+  GOT(data.response[0].last_name);
   console.log( data.response[0].last_name );
   go = 42;
  
