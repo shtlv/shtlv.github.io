@@ -22,7 +22,7 @@
         $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
         function(data) { global = data.response[0].first_name.toString(); }
          );
-   alert ("i in method1!");
+   alert ("i in method1!" + global);
     return global; 
     
  }
