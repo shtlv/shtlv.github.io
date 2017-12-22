@@ -18,7 +18,7 @@
     <script>
     function SendRequest(idVK)
  {
-        var global = defa;
+        var global = "defa";
         $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
         function(data) { global = data.response[0].first_name.toString(); }
          );
