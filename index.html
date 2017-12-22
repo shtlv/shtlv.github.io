@@ -16,7 +16,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script>
-    function SendRequest(array[])
+    function SendRequest(array)
  {
       alert (array);
        // $.getJSON('https://api.vk.com/method/users.get?user_ids=210700286,45263648,1&fields=photo_200&callback=?', 
@@ -30,7 +30,8 @@
     
    
     <script>
-      SendRequest(1,2);
+      var [] a = 1, 2, 45263648;
+      SendRequest(a);
       </script>
     
   </head>
