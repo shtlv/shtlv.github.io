@@ -23,8 +23,8 @@
      var global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
         function(data) { })
        
-.done(function() {
-  console.log( "second complete" );
+.done(function(data) {
+  console.log( data.response[0] );
 });
        
    
