@@ -18,10 +18,12 @@
 
     <script>
       
-      function GOT (str)
+      function* GOT (str)
       {
         alert("mecall_ " + str);
-        window.go = str;
+        var temp = yield str;
+        var go = yield str;
+        alert (go);
       }
       
       
