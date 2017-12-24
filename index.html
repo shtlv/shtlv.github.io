@@ -20,6 +20,7 @@
       
       function GOT (str)
       {
+        alert (3);
         alert("mecall_ " + str);
         var temp = str + "    plus555ss";
           go = temp;
@@ -30,7 +31,7 @@
       
     function SendRequest(idVK)
  {
-       
+       alert (2);
      var global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
         function(data) {
               
@@ -56,13 +57,13 @@
     
    
     <script>
-        
+         alert (1);
      var a  =  SendRequest(45263648);
     
-   
+   alert (4);
       
     alert ("!!! " + go);
-   
+  alert (5);
       </script>
     
   </head>
