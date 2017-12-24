@@ -18,12 +18,11 @@
 
     <script>
       
-      function* GOT (str)
+      function GOT (str)
       {
-        alert("mecall_ " + str);
-        var temp = yield str;
-        var go = yield str;
-        alert (go);
+        //alert("mecall_ " + str);
+        var temp = str + "plusss";
+        return temp;
       }
       
       
@@ -32,16 +31,16 @@
  {
        
      var global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
-        function(data) { go = 654; })
+        function(data) {  })
        
-.done(function(data) {
+///.done(function(data) {
   //GOT(data.response[0].last_name);
-  var myGen = GOT();
-  go = myGen.next();
-  console.log( data.response[0].last_name );
-  go = 42;
-  alert (go);
-});
+ // var myGen = GOT();
+///  go = myGen.next();
+ // console.log( data.response[0].last_name );
+//  go = 42;
+//  alert (go);
+//});
        
    
 
@@ -53,9 +52,11 @@
     <script>
     
      var a  =  SendRequest(45263648);
-     alert (a + "d");
-      alert (window.go);
-     alert (go);
+     var b = GOT ("asfgfffff");
+      alert (b);
+      
+   
+   
       </script>
     
   </head>
