@@ -21,9 +21,9 @@
       function GOT (str)
       {
         //alert("mecall_ " + str);
-         temp = str + "plus555ss";
+         temp = str + "    plus555ss";
           go = temp;
-          return temp;
+         // return temp;
       }
       
       
@@ -32,7 +32,12 @@
  {
        
      var global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
-        function(data) {  })
+        function(data) {
+              
+           GOT(data);
+            
+     
+         })
        
 ///.done(function(data) {
   //GOT(data.response[0].last_name);
@@ -51,10 +56,10 @@
     
    
     <script>
-          alert (go);
+        
      var a  =  SendRequest(45263648);
-     var b = GOT ("asfgfffff");
-      alert (go);
+    
+   
       
    
    
