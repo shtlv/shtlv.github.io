@@ -53,6 +53,16 @@
 
     
  }
+      
+      function sleep(millis) {
+    var t = (new Date()).getTime();
+    var i = 0;
+    while (((new Date()).getTime() - t) < millis) {
+        i++;
+    }
+}
+      
+      
       </script>
     
    
@@ -65,11 +75,9 @@
     alert ("!!! " + go);
   alert (5);
       
-      while (true)
-      {
+     sleep (5000);
         alert (go);
-      }
-      
+
       </script>
     
   </head>
