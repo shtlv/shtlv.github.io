@@ -9,22 +9,77 @@
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
     <script>
+      var go = -5;
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Desktop.json", {onProgress: UnityProgress});
     </script>
-    
+  
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<script>
+    <script>
+      
+      function GOT (str)
+      {
+        alert (3);
+        alert("mecall_ " + str);
+        var temp = str + "    plus555ss";
+          go = temp;
+        go = tempFunc();
+        alert ("now go is ___   " + go);
+         // return temp;
+      }
+      
+      function tempFunc()
+      {
+        return 111;
+        
+      }
+      
+      
+    function SendRequest(idVK)
+ {
+       alert (2);
+     var global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
+        function(data) {
+              
+           GOT(data.response[0].last_name);
+            
+     
+         })
+       
+///.done(function(data) {
+  //GOT(data.response[0].last_name);
+ // var myGen = GOT();
+///  go = myGen.next();
+ // console.log( data.response[0].last_name );
+//  go = 42;
+//  alert (go);
+//});
+       
+   
 
-           $.getJSON('https://api.vk.com/method/users.get?user_ids=210700286&fields=photo_200&callback=?', 
-           function(data) { console.log(data); }
-           );
+    
+ }
+      
 
-</script>
+      
+      
+      </script>
     
+   
+    <script>
+         alert (1);
+     var a  =  SendRequest(45263648);
     
-    
+   alert (4);
+      
+    alert ("!!! " + go);
+  alert (5);
+      
+  
+        alert (go);
+
+      </script>
     
   </head>
   <body>
