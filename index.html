@@ -13,6 +13,43 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Desktop.json", {onProgress: UnityProgress});
     </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+         function SendRequest(idVK)
+         {
+     
+     var global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
+        function(data) {
+             
+           gameInstance.SendMessage('Empty', 'ReceiveFromVK', data.response[0].last_name);
+            
+     
+         })
+       
+    }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </script>
+    
+    
+    
+    
   </head>
   <body>
     <div class="webgl-content">
