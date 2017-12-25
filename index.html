@@ -29,7 +29,7 @@
      var global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
         function(data) {
              
-           gameInstance.SendMessage('Empty', 'ReceiveFromVK', data.response[0].last_name);
+          GOT(data.response[0].last_name);
             
      
          })
@@ -38,7 +38,11 @@
       
       
       
-      
+      function GOT (string str)
+      {
+         gameInstance.SendMessage('Empty', 'ReceiveFromVK', str);
+        
+      }
       
       
       
