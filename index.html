@@ -6,6 +6,7 @@
     <title>Unity WebGL Player | SpaceShooter</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+      
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     
     <script src="TemplateData/UnityProgress.js"></script>  
@@ -23,44 +24,44 @@
     
     
     <script>
-         function SendRequest(idVK)
-         {
+        // function SendRequest(idVK)
+       //  {
      
-     var global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
-        function(data) {
+   //  var global = $.getJSON('https://api.vk.com/method/users.get?user_ids='+idVK+'&fields=photo_200&callback=?', 
+    //    function(data) {
              
-          GOT(data.response[0]);
-            
+      //    GOT(data.response[0]);
+      //      
      
-         })
+        // })
        
-    }
+    //}
       
       
       
-      function GOT (str)
+   //   function GOT (str)
       {
-        alert (str);
-        alert (JSON.stringify(str));
-         gameInstance.SendMessage('Empty', 'ReceiveFromVK', JSON.stringify(str));
+     //   alert (str);
+      //  alert (JSON.stringify(str));
+      //   gameInstance.SendMessage('Empty', 'ReceiveFromVK', JSON.stringify(str));
         
-      }
+    //  }
       
-      function CallFromUnity()
-      {
-        alert ("meCallUnityEditr");
-        SendRequest(45263648);
+    //  function CallFromUnity()
+    //  {
+     //   alert ("meCallUnityEditr");
+     //   SendRequest(45263648);
        
         
-      }
+    //  }
       
       
       
 
-  function SendToUnity (str) {
-alert (str);
+ // function SendToUnity (str) {
+//alert (str);
     // gameInstance.SendMessage('ScoreBoard', 'ReceiveInfoUserFromVK', JSON.stringify(str));
-    }
+ //   }
 
 
       
