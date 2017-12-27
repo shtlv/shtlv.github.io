@@ -45,14 +45,14 @@
            crossDomain: true,
            async: false,
          success: function(data){
-       
+        alert (JSON.stringify(data.response));
          //  gameInstance.SendMessage('ScoreBoard', 'ReceiveFromVK', data.response);
          //  gameInstance.SendMessage('ScoreBoard', 'ReceiveFromVK', JSON.stringify(data.response));
            
            var a = [1, 5, 7, 10];
            
            gameInstance.SendMessage('ScoreBoard', 'ReceiveFromVK', a);
-           console.log (alert (JSON.stringify(data.response));
+          
         
          }    
 });
