@@ -46,7 +46,8 @@
            async: false,
          success: function(data){
        
-       console.log (data.response);
+           gameInstance.SendMessage('ScoreBoard', 'ReceiveFromVK', data.response);
+           console.log (data.response);
         
          }    
 });
