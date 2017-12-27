@@ -29,11 +29,29 @@
       
      function FuncInJS(arrayids)
       {
-        alert (arrayids);
+        //alert (arrayids);
+         GetRequest(arrayids)
+        
         
       }
       
-      
+      function GetRequest(arrayids)
+
+        {
+          var a = $.ajax({
+           url: 'https://api.vk.com/method/users.get?user_ids='+arrayids+'&fields=bdate&v=5.69&callback=callbackFunc',
+           type: 'GET',
+           dataType: 'jsonp',
+           crossDomain: true,
+           async: false,
+         success: function(data){
+       
+       console.log (data.response);
+        
+         }    
+});
+
+}
       
       
       
