@@ -53,7 +53,7 @@
            
            for (var i = 0; i<data.response.length; i++)
            {
-             //alert (data.response[i]);
+            // alert (data.response[i]);
             // console.log(data.response[i]);
              gameInstance.SendMessage('ScoreBoard', 'ReceiveFromVK', JSON.stringify(data.response[i]));
            }
