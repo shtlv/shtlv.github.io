@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Plarium_test_ver_2_0",
+"dataUrl": "ptz20_WebGL.data.unityweb",
+"asmCodeUrl": "ptz20_WebGL.asm.code.unityweb",
+"asmMemoryUrl": "ptz20_WebGL.asm.memory.unityweb",
+"asmFrameworkUrl": "ptz20_WebGL.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
